@@ -314,8 +314,9 @@ header {
 .arrow2 {
 	position: absolute;
 	right:50px;
-	font-size: 26px;
+	font-size: 34px;
 }
+
 
 .aboutMoreContent {
 	width:75%;
@@ -492,7 +493,7 @@ header {
 .footer {
 	background-color: #dfdfdf;
 	padding:2vw 0 1vw 0;
-	height:300px;
+	height:320px;
 	font-family: 'Arvo', serif;
 }
 .footerTitle {
