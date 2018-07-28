@@ -47,8 +47,9 @@
 					<br>
 				</div>
 				<div class="arrow">
-					<i class="fas fa-arrow-up clickUp"></i><br>
-					<i class="fas fa-arrow-down clickDown"></i>
+					<!-- <i class="fas fa-arrow-up clickUp" onclick=""></i><br> -->
+					<!-- <i class="fas fa-arrow-down clickDown"></i> -->
+					<i class="fas fa-angle-down" onclick="scrollto('one')"></i>
 				</div>
 			</div>
 	</header>
@@ -62,16 +63,16 @@
                 <div class="navContent" id="navContent">
                     <ul class="navbar-nav ">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Home </a>
+                            <a class="nav-link" onclick="scrollto('header')">Home </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About me</a>
+                            <a class="nav-link" onclick="scrollto('two')">About me</a>
                         </li>           
                          <li class="nav-item">
-                            <a class="nav-link" href="#">Experience</a>
+                            <a class="nav-link" onclick="scrollto('three')">Experience</a>
                         </li>
                          <li class="nav-item">
-                            <a class="nav-link" href="#">Extras</a>
+                            <a class="nav-link" onclick="scrollto('four')">Extras</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="C:\Users\Emma\OneDrive - University of Waterloo\CO-OP\Emma Lozhkin - Computer Engineering, University of Waterloo.pdf" download="Emma-Lozhkin">Resume</a>
@@ -460,5 +461,6 @@
 	</main>
 
 
+	<script type="text/javascript" src="mainJS.js"></script>
 
 </body>
