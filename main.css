@@ -44,6 +44,13 @@ header {
 }
 
 /*=======NAVBAR===================*/
+.navline {
+	background-color:black;
+	width:50px;
+	height:1px;
+	margin-left:0.4vw;
+}
+
 .sticky {
   position: fixed;
   display: block !important;
@@ -51,7 +58,11 @@ header {
   top: 0;
   width:100%;
   transition: all 0.5s ease-in;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
   -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+  -o-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+  -ms-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
 }
 
 .navbar {
@@ -59,6 +70,9 @@ header {
 	font-family: Sans-Serif;
 	display: none;
 	-webkit-box-shadow:0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
+	-moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+  	-o-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+  	-ms-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
 	box-shadow:0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
 	font-weight:300;
 	font-size: 18px;
@@ -82,9 +96,13 @@ header {
 	padding:10px;
 	font-size:.8rem;
 	font-weight:300;
-	color:#000!important;
+	color:#000000 !important;
 	text-decoration: none;
 	cursor: pointer;
+
+}
+.navbar a:hover {
+	color:black !important;
 }
 .navbar,.pagination .page-item.active .page-link{
 	-webkit-box-shadow:0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12)
@@ -132,8 +150,8 @@ header {
     letter-spacing: 0.2rem;
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
-    background-color:black;
-    color:white;
+    background-color:#ECEBE4;
+    color:#000000;
 }
 .contain {
 	display: inline-block;
@@ -151,10 +169,9 @@ header {
 	display: inline-block;
 	height: 0.5px;
 	width: 17rem;
-	background-color: white;
+	background-color: #98D9C2;
 	text-align: center;
 }	
-
 .arrow {
 	position: absolute;
 	right:50px;
@@ -166,11 +183,13 @@ header {
 }
 .fas {
 	transition: color 0.4s ease-in, background ease-in 0.2s;
-	color:black;
+	background-color: #98D9C2;
+	color:white;
+	padding:0.5vw 1vw;
 }
 .fas:hover {
-	background-color: black;
-	color:white;
+	color:#98D9C2;
+	background-color:#ECEBE4;
 }
 .describeWords {
 	font-size:20px;
@@ -189,7 +208,7 @@ header {
 	display: flex;	
 	height:400px;
 	width:100%;
-	background-color:#dfdfdf;
+	background-color:#ECEBE4;
 	margin-bottom: 1rem;
 }
 .intro {
@@ -201,8 +220,10 @@ header {
 .logo-circle {
 	margin:1rem auto;
 	position: relative;
-    background-color: #a4a5a9;
     border-radius: 50%; 
+    border-style: solid;
+    border-color: #98D9C2;
+    border-width: 5px;
     width: 150px;
     height:150px;
     padding:20px;
@@ -211,13 +232,14 @@ header {
     overflow:hidden;
 }
 .hi {
-	color:#a4a5a9;
+	color:#98D9C2;
 	font-size: 30px;
 	padding-bottom:0.5rem;
 }
 .intro-text {
 	text-align: center;	
 	font-size:20px;
+	line-height:1.8rem;
 	font-family: 'Arvo', serif;
 
 }
@@ -229,6 +251,9 @@ header {
 .social-vertical ul {
 	list-style-type: none;
 	padding:0;
+}
+.social-vertical a {
+	color: #98D9C2;
 }
 .social-item {
 	font-size:19px;
@@ -242,6 +267,9 @@ header {
 .social-item:hover {
 	color:black;
 	font-size:22px;
+}
+.social-item i:hover {
+	color:black;
 }
 
 /*==========CONTENT 2 - ABOUT ME ================*/
@@ -273,7 +301,7 @@ header {
 	font-family:sans-serif;
 	font-size: 1.8vw;
 	color:white;
-	background-color:black;
+	background-color:#D1F0B1;
 	height:auto;
 	width:12vw;
 	margin:1rem 0 0 32rem;
@@ -315,6 +343,11 @@ header {
 	position: absolute;
 	right:50px;
 	font-size: 34px;
+	cursor: pointer;
+}
+.arrow2 .fas:hover {
+	background-color: transparent;
+	color:white;
 }
 
 
@@ -508,7 +541,6 @@ header {
 .footer p {
 	text-align: center;
 }
-
 .footerText {
 	display: block;
 	font-size:0.9vw;
@@ -517,12 +549,16 @@ header {
 	margin-left: 39vw;
 }
 .social-vertical ul {
+	transition:all 0.5s ease-in;
 	list-style-type: none;
 	padding:0;
 }
+.footer .social-item a{
+	transition:all 0.5s ease-in;
+}
 .footer .social-item:hover {
 	color:black;
-	font-size:25px;
+	font-size:25px !important;
 }
 .footer li {
 	font-size:25px;
@@ -530,7 +566,5 @@ header {
 	margin:1rem;
 	transition:all 0.25s ease-in;
 	cursor: pointer;
-	/*width:35px;*/
-	/*height: 35px;*/
 	display: inline-block;
 }

@@ -1,5 +1,7 @@
+console.log("test");
+
 // ============== word toggle
-var words = ['innovator','student', 'designer', 'developer', 'coder', 'programmer'];
+var words = ['innovator','student', 'designer', 'developer', 'leader', 'programmer'];
 var x=0;
 
 wordtoggle(1);
@@ -23,9 +25,6 @@ function wordtoggle(x){
 	}
 }
 
-// ============== arrows to change sections
-
-
 // ========== navbar navigation to different sections
 function scrollto(div){
 	var extra = 0;
@@ -41,7 +40,9 @@ function scrollto(div){
 
 
 // ========== sticky navbar on scroll 
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {
+	myFunction()
+};
 
 var navbar = document.getElementById("navbar");
 var header = document.getElementById("header");
