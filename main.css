@@ -50,7 +50,6 @@ header {
 	height:1px;
 	margin-left:0.4vw;
 }
-
 .sticky {
   position: fixed;
   display: block !important;
@@ -110,7 +109,7 @@ header {
 
 @media(max-width: 768px) {
 	.navbar:not(.top-nav-collapse){
-		background: blue !important;
+		background: #B6D8CC !important;
 	}
 }
 @media (min-width:600px){
@@ -139,8 +138,6 @@ header {
 	.navbar .container .navbar-toggler-right{right:0}
 	.navbar .nav-item .nav-link{padding-right:6px;padding-left:6px}
 }
-
-		
 
 /*=========== MAIN PAGE ==============*/
 .wrapper {
@@ -232,9 +229,9 @@ header {
     overflow:hidden;
 }
 .hi {
-	color:#98D9C2;
+	color:#087E8B;
 	font-size: 30px;
-	padding-bottom:0.5rem;
+	margin:2.3vw 0;
 }
 .intro-text {
 	text-align: center;	
@@ -253,7 +250,7 @@ header {
 	padding:0;
 }
 .social-vertical a {
-	color: #98D9C2;
+	color: #087E8B;
 }
 .social-item {
 	font-size:19px;
@@ -264,12 +261,9 @@ header {
 	width:35px;
 	height: 35px;
 }
-.social-item:hover {
-	color:black;
-	font-size:22px;
-}
+
 .social-item i:hover {
-	color:black;
+	color:#065C66;
 }
 
 /*==========CONTENT 2 - ABOUT ME ================*/
@@ -301,7 +295,7 @@ header {
 	font-family:sans-serif;
 	font-size: 1.8vw;
 	color:white;
-	background-color:#D1F0B1;
+	background-color:#98D9C2;
 	height:auto;
 	width:12vw;
 	margin:1rem 0 0 32rem;
@@ -333,6 +327,7 @@ header {
 	line-height:1.5rem;
 	border-style: solid;
 	border-width: 0.5px;
+	border-color:#98D9C2;
 	width:30vw;
 	height:450px;
 	margin:3rem 3rem 0 3rem;
@@ -400,10 +395,10 @@ header {
 	font-family: 'Poppins', sans-serif;
 }
 .skillsTitle {
-	font-size:3vw;
+	font-size:2.6vw;
 	width:auto;
-	color:black;
-	background-color:#B3B1B1;
+	color:#087C89;
+	background-color:#98D9C2;
 	text-transform:lowercase;
 	letter-spacing: 0.1rem;
 	margin-top:1rem;
@@ -421,11 +416,15 @@ header {
 	grid-template-columns: auto auto auto auto;
 }
 .grid-item {
-  /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+  /*border: 1px solid #065C66;*/
   width:50%;
   padding: 0.5vw;
   font-size: 5vw;
   text-align: center;
+  color:#98D9C2;
+  /*background-color:#065C66;*/
+  margin:1vw 0;
+  border-radius:50%;
 }
 
 
@@ -505,6 +504,7 @@ header {
 }*/
 .moreItem .divider {
 	margin: 0;
+	background-color:#087C89;
 }
 .moreItem a {
 	cursor: pointer;
@@ -524,7 +524,7 @@ header {
 
 /*=========== FOOTER =============*/
 .footer {
-	background-color: #dfdfdf;
+	background-color: #ECEBE4;
 	padding:2vw 0 1vw 0;
 	height:320px;
 	font-family: 'Arvo', serif;
@@ -544,6 +544,7 @@ header {
 .footerText {
 	display: block;
 	font-size:0.9vw;
+	color:#087C89;
 }
 .footer .social-vertical {
 	margin-left: 39vw;
