@@ -302,7 +302,7 @@ header {
 	background-size: 100% 100%;
 	border-radius:3%;
 	width:30vw;
-	height:30vw;
+	height:65vh;
 	margin: 0 5rem 0 10rem;
 	overflow: hidden;
 	transition: all 0.5s ease-in;
@@ -327,14 +327,14 @@ header {
 	}
 	.pictureMe {
 		width:50vw;
-		height:40vw;
+		height:40vh;
 		margin: 0 1rem 0 4rem;
 	}
 	.aboutText {
 		padding:1rem !important;
 		margin: 3rem 1rem 0 1rem;
 		width:35vw !important;
-		height:30vw !important;
+		height:30vh !important;
 		font-size:10px;
 		line-height:1rem !important;
 	}
@@ -348,14 +348,14 @@ header {
 	}
 	.pictureMe {
 		width:50vw;
-		height:40vw;
+		height:50vh;
 		margin: 0 1rem 0 4rem;
 	}
 	.aboutText {
 		padding:1rem !important;
 		margin: 3rem 1rem 0 1rem;
 		width:35vw !important;
-		height:30vw !important;
+		height:40vh !important;
 		font-size:10px;
 		line-height:1rem !important;
 	}
@@ -369,7 +369,7 @@ header {
 	border-width: 0.5px;
 	border-color:#98D9C2;
 	width:30vw;
-	height:30vw;
+	height:60vh;
 	margin:3rem 3rem 2rem 3rem;
 	border-radius:1%;
 	overflow-y: scroll;
@@ -412,14 +412,25 @@ header {
 	font-family: 'Arvo', serif;
 }
 .profile h3 {
-	font-weight: normal;
+	font-weight: 0.5px;
 	font-size:15px;
-	letter-spacing: 0.05rem;
+	letter-spacing: 0.1rem;
+	color: #087C89 !important;
+}
+.profile h4 {
+	font-weight: normal;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #B6D8CC;
+	text-decoration: underline;
 }
 .profile ul {
 	font-size:14px;
-	line-height: 1.5rem;
 }
+.profileUl li {
+	margin:1rem 0;
+}
+
 
 .aboutSkill {
 	position: relative;
