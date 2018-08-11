@@ -114,6 +114,7 @@ header {
 @media(max-width: 768px) {
 	.navbar:not(.top-nav-collapse){
 		background: #B6D8CC !important;
+		color:black;
 	}
 }
 @media (min-width:600px){
@@ -741,7 +742,7 @@ header {
 }
 
 .grid-container{
-	margin:2vw 0 0 5%;
+	margin:4vw 0 0 5%;
 	display: grid;
 	grid-template-columns: auto auto auto auto;
 }
@@ -805,8 +806,8 @@ header {
 .moreList .skillsTitle {
 	font-size:1.5vw;
 	width:auto;
-	color:black;
-	background-color:#B3B1B1;
+	color:#087C89;
+	background-color:#D0E6DE;
 	text-transform:lowercase;
 	letter-spacing: 0.1rem;
 	margin-top:1rem;
