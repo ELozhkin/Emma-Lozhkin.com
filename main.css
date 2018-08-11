@@ -36,6 +36,10 @@ header {
 .NoLinkDecor:hover {
 	font-weight: bold;
 }
+.link2 {
+	color:#B6D8CC !important;
+	transition: all 0s;
+}
 .divider {
 	background-color:#dfdfdf;
 	height:1px;
@@ -214,23 +218,6 @@ header {
 	padding-left:4rem;
 	font-weight:lighter;
 }
-.logo-circle {
-	margin:1rem auto;
-	position: relative;
-    border-radius: 50%; 
-    border-style: solid;
-    border-color: #98D9C2;
-    border-width: 5px;
-    width: 150px;
-    height:150px;
-    padding:20px;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    overflow:hidden;
-}
-.logo-circle img {
-	width:100px;
-}
 /*==============logo-circle animation =============*/
 :root {
 	--colour : #087C89;
@@ -257,6 +244,8 @@ header {
  	display: block;
  	font-size: 16px;
  	position: absolute;
+ 	/*background-color:black;*/
+ 	padding:5px;
  }
 
 .Circlename{
@@ -289,7 +278,7 @@ header {
 
 /*icon positioning*/
 .i1{
-	top: 1vw;
+	top: 2vw;
 	left: 6vw;
 	opacity: 0;
 }
@@ -301,16 +290,14 @@ header {
 
 .i3{
 	top:7vw;
-	left: 11vw;
+	left: 15vw;
 	opacity: 0;
-
 }
 
 .i4{
-	top: 12vw;
+	top: 15vw;
 	left:6vw;
 	opacity: 0;
-
 }
 /*lines*/
 .line1, .line2 {
@@ -354,9 +341,9 @@ header {
 }
 
 
-  @keyframes border{
+@keyframes border{
     0% {
- 		box-shadow: 200px -130px 0 -1000px var(--colour),-200px -130px 0 -1000px var(--colour),-200px 130px 0 -1000px var(--colour),200px 130px 0 -1000px var(--colour),0 0 0 2px #E94E3D;   }
+ 		box-shadow: 200px -130px 0 -1000px var(--colour),-200px -130px 0 -1000px var(--colour),-200px 130px 0 -1000px var(--colour),200px 130px 0 -1000px var(--colour),0 0 0 2px #fff;   }
     25% {
       box-shadow: 0 -300px 0 -1000px var(--colour), -200px -130px 0 -1000px var(--colour), -200px 130px 0 -1000px var(--colour), 200px 130px 0 -1000px var(--colour), 0 0 0 2px #fff;
     }
@@ -370,29 +357,29 @@ header {
       box-shadow: 0 -300px 0 -1000px var(--colour), -300px 0px 0 -1000px var(--colour), 0px 300px 0 -1000px var(--colour), 300px 0px 0 -1000px var(--colour), 0 0 0 3px #fff;
     } 
   }
-
-  @keyframes icon1{
-    0% {top: -155px;}
-    100% {top: 35px;
+@keyframes icon1{
+    0% {top: -5vh;}
+    100% {top: 2vw;
+	left: 6vw;
     	opacity: 1;}
   }
-
-  @keyframes icon2{
+@keyframes icon2{
     0% {left: -20px;}
-    100% {left: 10px;
-    opacity: 1;}
+    100% {	top: 7vw;
+    		left:1vw;
+    		opacity: 1;}
   }
-
-  @keyframes icon3{
+@keyframes icon3{
     0% {bottom: -25px;}
-    100% {bottom: 40px;opacity: 1;}
+    100% {top:7vw;
+	left: 11vw;
+    	opacity: 1;}
   }
-
-  @keyframes icon4{
+@keyframes icon4{
     0% {right: -25px;}
-    100% {right: 10px;opacity: 1;}
+    100% {top: 12vw;
+	left:6vw;opacity: 1;}
   }
-
 @keyframes line{
     0%{
       left: 15;
@@ -404,6 +391,82 @@ header {
       width: 100px;
       opacity: 1;
     }
+}
+@media(max-width: 960px) {
+	.Circletext {
+		top: 5px;
+		width:130px;
+		font-size: 20px;
+
+	}
+	.circle {
+		width: 14vw;
+    	height: 26vh;
+	}
+	.links {
+		font-size: 11px;
+		letter-spacing: 0;
+	}
+	@keyframes icon1{
+	    0% {top: -5vh;}
+	    100% {top: 2vw;
+			left: 5vw;
+	    	opacity: 1;}
+	  }
+	@keyframes icon2{
+	    0% {left: -20px;}
+	    100% {	top: 6vw;
+	    		left:1vw;
+	    		opacity: 1;}
+	  }
+	@keyframes icon3{
+	    0% {bottom: -25px;}
+	    100% {top:6vw;
+		left: 9vw;
+	    	opacity: 1;}
+	  }
+	@keyframes icon4{
+	    0% {right: -25px;}
+	    100% {top: 10vw;
+		left:5vw;opacity: 1;}
+  	}
+  	@keyframes line{
+    0%{
+      left: 15;
+      width: 0px;
+    }
+    100% {
+      left: 2vw;
+      top:14vh;
+      width: 100px;
+      opacity: 1;
+    }
+}
+}
+@media(max-width: 760px) {
+	.Circletext {
+		top: -10px;
+		width:105px;
+	}
+	.circle {
+		width: 16vw;
+    	height: 20vh;
+	}
+	.links {
+		font-size: 9px;
+	}
+  	@keyframes line{
+    0%{
+      left: 15;
+      width: 0px;
+    }
+    100% {
+      left: 2.5vw;
+      top:10vh;
+      width: 70px;
+      opacity: 1;
+    }
+  }
 }
 /*======================*/
 .hi {
@@ -504,8 +567,8 @@ header {
 		font-size:2.4vw;
 	}
 	.pictureMe {
-		width:50vw;
-		height:40vh;
+		width:30vw;
+		height:50vh;
 		margin: 0 1rem 0 4rem;
 	}
 	.aboutText {
@@ -644,7 +707,8 @@ header {
 	font-size:2.6vw;
 	width:auto;
 	color:#087C89;
-	background-color:#98D9C2;
+	background-color:#D0E6DE;
+	border-radius:1%;
 	text-transform:lowercase;
 	letter-spacing: 0.1rem;
 	margin-top:1rem;
