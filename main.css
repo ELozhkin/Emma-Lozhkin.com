@@ -660,6 +660,11 @@ header {
 .profile1 {
 	margin-top:-19vh !important;
 }
+@media(max-width:960px) {
+	.profile1 {
+		margin-top:-8vh !important;
+	}
+}
 .profile h3 {
 	font-weight: 0.5px;
 	font-size:15px;
