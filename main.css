@@ -7,11 +7,11 @@ body {
 }
 
 .view{
-	background-image: url("C:/Users/Emma/OneDrive - University of Waterloo/Code/Gallery/trulli.jpg");
-				/*options: italy trees, Main, NY-diner, swim*/
+	background-image: url("trulli.jpg");
 	background-size: 100% 170%;
 	opacity: 0.8;
 	background-repeat:no-repeat;
+	background-attachment: fixed;
 	background-position:center;
 	/*-webkit-background-size:cover;
 	background-size:cover;*/
@@ -44,6 +44,12 @@ header {
 	height:1px;
 	width:70%;
 	margin:6vw auto;
+}
+
+@media(max-width:479px) {
+	.view{
+		background-size: 100% 100%;
+	}
 }
 
 /*=======NAVBAR===================*/
@@ -144,6 +150,27 @@ header {
 }
 
 /*=========== MAIN PAGE ==============*/
+@media(max-width:479px) {
+	.name {
+		font-size:45px !important;
+		padding-bottom:1.5rem !important;
+	}
+	.name.line::after {
+		margin-top:10px !important;
+		width:55vw !important;
+		height:1px !important;
+		margin-left:8px !important;
+	}
+	.describeWords {
+		font-size:1rem !important;
+	}
+	.arrow {
+		right:30px !important;
+	}
+	.fas {
+		padding:1vw 2vw !important;
+	}
+}
 .wrapper {
 	position:absolute;
 	padding: 0.5% 3% 0 3%;
@@ -162,7 +189,6 @@ header {
 	font-size:64px;
 	padding-bottom: 1.5rem;
 }
-
 .name.line::after {
 	position:absolute;
 	margin-top:7px;
@@ -542,7 +568,7 @@ header {
 
 .pictureMe {
 	/*background-color:grey;*/
-	background-image: url("C:/Users/Emma/OneDrive - University of Waterloo/Code/EmmaLozhkin.com/profile.jpg");
+	background-image: url("profile.jpg");
 	background-repeat:no-repeat;
 	background-position:center;
 	background-size: 100% 100%;
