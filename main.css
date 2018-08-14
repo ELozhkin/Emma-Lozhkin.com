@@ -49,6 +49,8 @@ header {
 @media(max-width:479px) {
 	.view{
 		background-size: 100% 100%;
+		background-repeat:no-repeat !important;
+		background-attachment: fixed !important;
 	}
 	.divider {
 		margin:3vw auto !important;
@@ -112,6 +114,9 @@ header {
 	cursor: pointer;
 }
 @media(max-width:479px) {
+	.navbar {
+		width:100% !important; 
+	}
 	.navbar a {
 		font-size:11px !important;
 		padding: 0 !important;
