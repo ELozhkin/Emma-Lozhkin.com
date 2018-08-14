@@ -252,6 +252,16 @@ header {
 		height:70vh !important;
 	}
 }
+@media(max-width:479px) {
+	.content1 {
+		height:80vh !important;
+	}
+	.intro {
+		width:80vw !important;
+		margin-left:-1rem !important;
+		margin-top:4.5rem !important;
+	}
+}
 /*==============logo-circle animation =============*/
 :root {
 	--colour : #087C89;
@@ -272,20 +282,34 @@ header {
       -200px 130px 0 -1000px var(--colour),
        200px 130px 0 -1000px var(--colour),
         0 0 0 1px var(--colour);
-  }	
+}	
+@media(max-width:479px) {
+	.circle {
+		width:25vw !important;
+		height:22vh !important;
+		margin-bottom:3rem !important;
+	}
+	.Circletext {
+		width:120px !important;
+		top:-5px !important;
+	}
+	.links {
+		font-size:10px !important;
+		padding:1rem !important;
+	}
+}
 
- .icon {
+
+.icon {
  	display: block;
  	font-size: 16px;
  	position: absolute;
- 	/*background-color:black;*/
  	padding:5px;
  }
 
 .Circlename{
 	font-size: 40px;
 	font-weight:lighter;
-	letter-spacing: 0.1rem;	
 	text-align: center;
 }
 
@@ -394,7 +418,7 @@ header {
 @keyframes icon1{
     0% {top: -5vh;}
     100% {top: 2vw;
-	left: 6vw;
+		left: 6vw;
     	opacity: 1;}
   }
 @keyframes icon2{
@@ -528,6 +552,11 @@ header {
 	}
 	.social-vertical {
 		margin:auto 2rem !important;
+	}
+}
+@media (max-width:479px) {
+	.hi {
+		margin-bottom:2rem !important;
 	}
 }
 
