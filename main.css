@@ -1000,7 +1000,6 @@ header {
 .footerTitle {
 	margin-left:33vw;
 }
-
 .footerTitle .divider {
 	background-color:black;
 	width:10%;
@@ -1014,9 +1013,32 @@ header {
 	font-size:0.9vw;
 	color:#087C89;
 }
+
+
 .footer .social-vertical {
 	margin-left: 39vw;
 }
+@media(max-width:479px) {
+	.footer {
+		padding:1rem 0!important;
+		height:350px;
+	}
+	.footerTitle {
+		margin:0 15vw !important;
+		width:100%;
+	}
+	.footerTitle .divider {
+		width:10%;
+		margin:2rem 0.5rem 0 0.5rem !important;
+	}
+	.footerText {
+		font-size:0.7rem !important;
+	}
+	.footer .social-vertical {
+		margin-left: 10rem !important;
+	}
+}
+
 @media (max-width:960px) {
 	.footerTitle {
 		margin:1rem 30vw;
@@ -1038,7 +1060,6 @@ header {
 }
 .footer .social-item:hover {
 	color:black;
-	font-size:25px !important;
 }
 .footer li {
 	font-size:25px;
