@@ -50,6 +50,9 @@ header {
 	.view{
 		background-size: 100% 100%;
 	}
+	.divider {
+		margin:3vw auto !important;
+	}
 }
 
 /*=======NAVBAR===================*/
@@ -730,8 +733,9 @@ header {
 	}
 	.aboutTitle {
 		margin:0.8rem 0 0 14rem !important;
-		font-size:2.7vw;
-		width:17vw;
+		font-size:4vw;
+		width:auto;
+		padding:0.5rem;
 	}
 	.aboutText {
 		margin:2rem 0.5rem 0 0 !important;
@@ -847,10 +851,13 @@ header {
 		margin-left:80%;
 	}
 	.grid-container {
-		margin-left:1rem !important;
+		margin: 1rem 0 !important;
+		width:100% !important;
 	}
 	.grid-item {
 		font-size:8vw !important;
+		margin:0.5rem !important;
+		width:50% !important;
 	}
 }
 
@@ -866,7 +873,6 @@ header {
 }
 .experienceText h3 {
 	font-size: 2vw;
-
 }
 .experienceText h4 {
 	font-size:1.1vw;
@@ -886,8 +892,25 @@ header {
 .experienceList .flexDiv {
 	margin-top:1rem;
 }
-
-
+@media(max-width:479px) {
+	.experienceList {
+		margin:9vw 8vw 0 8vw;
+		width:90%;
+	}
+	.experienceText {
+		margin: 0 2rem;
+	}
+	.experienceText h3 {
+		font-size: 4vw;
+	}
+	.experienceText h4 {
+		font-size:2.3vw;
+		line-height: 0.3rem;
+	}
+	.experienceText li {
+		font-size:2.5vw;
+	}
+}
 
 /*===========CONTENT 4 - MORE STUFF ============*/
 .moreList {
@@ -896,7 +919,6 @@ header {
 	width:90%;
 	padding:1vw;
 	height:auto;
-	/*background-color:grey;*/
 }
 .moreList .skillsTitle {
 	font-size:1.5vw;
@@ -932,6 +954,7 @@ header {
 .moreItem a {
 	cursor: pointer;
 }
+
 .moreItem a:hover {
 	font-weight: bold;
 }
@@ -942,6 +965,28 @@ header {
 }
 .moreItem li {
 	margin: 1rem  0;
+}
+@media(max-width:479px) {
+	.moreList {
+		display: block !important;
+		width:90%;
+	}
+	.moreList .skillsTitle {
+		margin-top:0 !important;
+		font-size:0.9rem !important;
+		background-color:white;
+		margin-left:10%;
+	}
+	.moreItem {
+		width:80%;
+		height:auto;
+		font-size:0.8rem !important;
+	}
+	.moreItem .divider {
+		margin: 0 !important; 
+		background-color:#087C89;
+	}
+	
 }
 
 
