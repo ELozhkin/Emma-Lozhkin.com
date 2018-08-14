@@ -654,7 +654,6 @@ header {
 	}
 }
 @media(max-width: 760px){
-
 	.aboutTitle {
 		margin:1rem 0 0 18rem !important;
 		width:15vw; 
@@ -673,8 +672,8 @@ header {
 		font-size:10px;
 		line-height:1rem !important;
 	}
-	
 }
+
 .highlightText {
 	color:#087C89 !important;
 }
@@ -701,8 +700,6 @@ header {
 	background-color: transparent;
 	color:white;
 }
-
-
 .aboutMoreContent {
 	width:75%;
 	height:auto;
@@ -720,6 +717,42 @@ header {
 	position:absolute;
 	z-index:10;
 }
+@media(max-width:960px) {
+	.profile1 {
+		margin-top:-8vh !important;
+	}
+}
+@media(max-width:479px) {
+	.pictureMe {
+		width:48vw !important;
+		height:44vh !important;
+		margin: 0 0 0 1rem !important;
+	}
+	.aboutTitle {
+		margin:0.8rem 0 0 14rem !important;
+		font-size:2.7vw;
+		width:17vw;
+	}
+	.aboutText {
+		margin:2rem 0.5rem 0 0 !important;
+	}
+	.profile {
+		margin:1rem 0.5rem !importantx;
+	}
+	.profile div {
+		margin:0 0.5rem !important;
+	}
+	.profile h3 {
+		font-size:14px !important;
+	}
+	.profile ul {
+		font-size:12px !important;
+	}
+	.profileUl {
+		line-height:1rem !important;
+	}
+
+}
 .profile {
 	margin:2rem 6rem;
 }
@@ -731,11 +764,7 @@ header {
 .profile1 {
 	margin-top:-25vh !important;
 }
-@media(max-width:960px) {
-	.profile1 {
-		margin-top:-8vh !important;
-	}
-}
+
 .profile h3 {
 	font-weight: 0.5px;
 	font-size:15px;
@@ -777,36 +806,6 @@ header {
 		font-size:12px;
 	}
 }
-.aboutSkill {
-	position: relative;
-	/*margin:0 0 0 15rem;*/
-	margin:0 auto;
-	display: flex;
-	width: 35%;	
-	background-color: white;
-	color:black;
-	border-style: solid;
-	border-width: 0.5px;
-	border-radius: 3%;
-	border-color: grey;
-}
-.skill {
-	margin:0.3rem 1rem;
-}
-.skillNum {
-	font-size:5vw;
-	text-align: center;
-}
-.skillWord {
-	font-size:1vw;
-	font-family: serif;
-	text-align: center;
-}
-.slash {
-	font-size:5vw;
-	margin:0 2%;
-	font-family: 'Poppins', sans-serif;
-}
 .skillsTitle {
 	font-size:2.6vw;
 	width:auto;
@@ -823,7 +822,6 @@ header {
 .skillsTitle:hover {
 	width:10%;
 }
-
 .grid-container{
 	margin:4vw 0 0 5%;
 	display: grid;
@@ -840,7 +838,21 @@ header {
   margin:0.5vw 0;
   border-radius:50%;
 }
-
+@media(max-width:479px) {
+	.skillsTitle {
+		margin-top:-3rem !important;
+		font-size:6vw;
+		letter-spacing: 0.1rem;
+		background-color: white;
+		margin-left:80%;
+	}
+	.grid-container {
+		margin-left:1rem !important;
+	}
+	.grid-item {
+		font-size:8vw !important;
+	}
+}
 
 /*=========CONTENT 3 -EXPERIENCES ===========*/
 .experienceList {
