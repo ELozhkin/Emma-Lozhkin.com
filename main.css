@@ -7,7 +7,7 @@ body {
 }
 
 .view{
-	background-image: url("trulli.jpg");
+	background-image: url("./media/trulli.jpg");
 	background-size: 100% 170%;
 	opacity: 0.8;
 	background-repeat:no-repeat;
@@ -129,7 +129,8 @@ header {
 	color:#61ABB3 !important;
 }
 .navbar,.pagination .page-item.active .page-link{
-	-webkit-box-shadow:0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12)
+	box-shadow:0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
+	-webkit-box-shadow:0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
 }
 
 @media(max-width: 768px) {
@@ -651,15 +652,14 @@ header {
 }
 
 .pictureMe {
-	/*background-color:grey;*/
-	background-image: url("profile.jpg");
+	background-image: url("./media/profile.jpg");
 	background-repeat:no-repeat;
 	background-position:center;
 	background-size: 100% 100%;
 	border-radius:3%;
 	width:30%;
 	height:65vh;
-	margin: 0 5rem 0 10rem;
+	margin: 0 5% 0 12%;
 	overflow: hidden;
 	transition: all 0.5s ease-in;
 }
