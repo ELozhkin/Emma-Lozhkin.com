@@ -652,7 +652,7 @@ header {
 }
 
 .pictureMe {
-	background-image: url("./media/profile.jpg");
+	background-image: url("./black.jpg");
 	background-repeat:no-repeat;
 	background-position:center;
 	background-size: 100% 100%;
@@ -670,7 +670,7 @@ header {
 	color:white;
 	background-color:#98D9C2;
 	height:auto;
-	width:12vw;
+	width:13vw;
 	margin:1rem 0 0 40%;
 	position:absolute;
 	padding:1.3vw 1.7vw;

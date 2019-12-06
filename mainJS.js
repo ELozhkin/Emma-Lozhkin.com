@@ -1,4 +1,4 @@
-console.log("test");
+console.log("Hey! This is my website :)");
 
 // ============== word toggle
 var words = ['innovator','student', 'designer', 'developer', 'leader', 'programmer'];
@@ -37,7 +37,6 @@ function scrollto(div){
 	},'slow');
 	
 };
-
 
 // ========== sticky navbar on scroll 
 window.onscroll = function() {
@@ -94,4 +93,16 @@ function displayVid(videoID) {
 		}
 		
 	}
+}
+
+// ======== toggle visibility of div
+function toggleVisibility(id) {
+	var x = document.getElementById(id)
+	
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+	
 }

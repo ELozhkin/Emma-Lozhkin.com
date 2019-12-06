@@ -2,6 +2,16 @@
 <html class="full-height">
 <head>
 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123346776-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-123346776-1');
+	</script>
+
 	<!-- Scripts + external CSS files -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -25,6 +35,9 @@
 
 	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	 -->
 	<script src="http://code.jquery.com/jquery-latest.js"></script> <!-- smooth transition-->
+
+	<script type="text/javascript" src="mainJS.js"></script>
+
 </head>
 <body>
 		
@@ -76,7 +89,7 @@
                             <a class="nav-link" onclick="scrollto('four')">Extras</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Emma Lozhkin - University of Waterloo Computer Engineering 1.1.pdf" download="Emma-Lozhkin" target="_blank">Resume</a>
+                            <a class="nav-link" href="Resume.pdf" download="Emma-Lozhkin" target="_blank">Resume</a>
                         </li>
                     </ul>
                 </div>
@@ -176,7 +189,7 @@
 						My name is Emma Lozhkin and this is my website! I am currently studying <span class=" highlightText">Computer Engineering</span> at the 
 						<a href="https://uwaterloo.ca/electrical-computer-engineering/" target="_blank" class="NoLinkDecor">University of Waterloo</a>.
 						<br>
-						I just finished my first co-op as a Software Developer at <a href="https://nymi.com/" target="_blank" class="NoLinkDecor">Nymi Inc.</a> 
+						I just finished my third co-op as a Production Engineer at <a href="https://www.shopify.ca/" target="_blank" class="NoLinkDecor">Shopify.</a> 
 						<br><br>
 						I am a <a href="http://www.schulichleaders.com/emma-lozhkin#.W3CkMNJKg2w" target="_blank" class="NoLinkDecor highlightText" target="_blank">2017 Schulich Leader Scholarship Award</a> recipient for the University of Waterloo, and am very grateful to have been given this opportunity to pursue my studies in Computer Engineering. 
 						<br><br>
@@ -234,14 +247,30 @@
 						<div class="skillsTitle">
 								Skills
 						</div>
-						<div class="grid-container">
+						<div class="grid-container">							
 							<!--  -->
+								<div class="grid-item">
+									<i class="devicon-go-plain"></i>
+								</div>
 								<div class="grid-item">
 									<i class="devicon-cplusplus-plain"></i>
 								</div>
 								<div class="grid-item">
 									<i class="devicon-c-plain"></i>
 								</div>
+
+								<div class="grid-item">
+									<i class="devicon-react-original"></i>
+								</div>
+							<!--  -->
+								<div class="grid-item">
+									<i class="devicon-nodejs-plain"></i>
+								</div>
+
+								<div class="grid-item">
+									<i class="devicon-mongodb-plain"></i>
+								</div>
+								
 								<div class="grid-item">
 									<i class="devicon-html5-plain"></i>
 								</div>
@@ -278,12 +307,10 @@
 						</div>
 					</div>
 				</div>
-
 				<!-- <div class="arrow2">
 					<i class="fas fa-arrow-up clickUp"></i><br>
 					<i class="fas fa-arrow-down clickDown"></i>
 				</div> -->
-
 			</div>
 			
 		</section >
@@ -293,18 +320,116 @@
 				<div class="flexDiv">
 					<div class="aboutTitle">
 								experience.
+								<br> 
+								<p style="font-size:8px; color:black;">
+									click on the boxes to learn more
+								</p>
 					</div>
 				</div>
 				<div class="experienceList ">
 					<div class="flexDiv">
 						<div class="experienceLogo">
-							<img src="./media/Nymi2.png">
+							<img src="./black.jpg">
 						</div>
 						<div class="experienceText">
-							<h3>Software Developer | Nymi Inc.</h3>
+							<h3 onclick="toggleVisibility('shopify')">Production Engineer | Shopify </h3>
+							<h4>September - December 2019</h4>
+							<h4>Waterloo, Canada</h4>
+							<ul id="shopify" style="display: none;">
+								<li>
+									Developed multi-threaded implementation of Shopify’s custom Horizontal Pod Autoscaler (HPA) 
+									using goroutines to run concurrent processes
+								</li>
+								<li>
+									Coded auto-scaling patterns based on replica usage and Kubernetes cluster configuration in Go to save the company millions of dollars
+								</li>
+								<li>
+									Implemented visualization dashboards on DataDog in JSON to display autoscaler status based on metrics such as replica usage
+								</li>
+								<li><em>Technologies:</em> Go, Kubernetes, Ruby</li>
+							</ul>
+							
+						</div>
+					</div>
+					<div class="flexDiv ">
+						<div class="experienceLogo" style="background-color: black; height:12vw;margin-top:3vh">
+							<img src="./black.jpg">
+						</div>
+						<div class="experienceText">
+							<h3 onclick="toggleVisibility('blueprint')">Developer | UW Blueprint</h3>
+							<h4>September 2019 - Present</h4>
+							<h4>Waterloo, Canada</h4>
+							<ul id="blueprint" style="display: none;">
+								<li>
+									Working with a team of students to create an image classification ML application that identifies microplastics in liquids. We have partnered with Polygone, a startup working to filter microplastics and microfibers from water.
+								</li>		
+								<li>	
+									I developed a C++ script that converts bitmap files from RGB to Black/White to make it easier for both humans and the script to identify 'blobs.'
+									<br><br>
+									<em>Check it out on <a href="https://github.com/ELozhkin/BMP-Colour-to-Greyscale" target="_blank" class="NoLinkDecor">
+										<strong>Github!</strong></a></em>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="flexDiv">
+							<div class="experienceLogo">
+								<img src="./black.jpg">
+							</div>
+							<div class="experienceText">
+								<h3 onclick="toggleVisibility('scotia')">Software Engineer | Scotiabank (PLATO) </h3>
+								<h4>January - April 2019</h4>
+								<h4>Toronto, Canada</h4>
+								<ul id="scotia" style="display: none;">
+									<li>
+										Responsible for the development and creation of the administrative web console using REST API’s, AngularJS, and Bootstrap framework for UX design.
+									</li>
+									<li>
+										Contributed to several web-based projects. Worked on all aspects of the software development cycle, continuously reviewed app iterations to reach long-term goals 
+									</li>
+									<li>
+										Worked as a member of a velocity-driven agile team, operating by goal-oriented sprints to deliver custom software applications to consumers.
+									</li>
+									<li>
+										<em>Technologies:</em> Springboot, React, SQL 
+									</li>
+								</ul>
+							</div>
+					</div>
+					<div class="flexDiv">
+						<div class="experienceLogo">
+							<img src="./black.jpg">
+						</div>
+						<div class="experienceText">
+							<h3 onclick="toggleVisibility('uwen1')">Co-Head | University of Waterloo Energy Network</h3>
+							<h4>December 2018 - Present</h4>
+							<h4>Waterloo, Canada</h4>
+							<ul id="uwen1" style="display: none;">
+								<li>
+									Organised the University of Waterloo’s first Energy- and Sustainability-focused Hackathon.
+								</li>
+								<li>
+									Applied for and received recognition as a member hackathon of Major League Hacking (MLH)
+									Head of Sponsorship and Outreach; responsible for overseeing sponsorships with companies including the BEIC, Github and Jumpstart, as well as partnerships with sustainability-focused organizations and startups.
+								</li>
+								<li>
+									Responsible for overseeing logistics for the event including finding speakers, budgeting, and fundraising
+								</li>
+								<li>
+										Expanded organizing team from 3 to 20 students for the 2020 event. Currently working on organizing an event with twice as many attendees.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="flexDiv">
+						<div class="experienceLogo">
+							<img src="./black.jpg">
+						</div>
+						<div class="experienceText">
+							<h3 onclick="toggleVisibility('nymi')">Software Developer | Nymi Inc.</h3>
 							<h4>May - August 2018</h4>
 							<h4>Toronto, Canada</h4>
-							<ul>
+							<ul id="nymi" style="display: none;">
 								<li>
 									Responsible for the development and creation of the administrative web console using REST API’s, AngularJS, and Bootstrap framework for UX design.
 								</li>
@@ -318,13 +443,13 @@
 					</div>
 					<div class="flexDiv ">
 						<div class="experienceLogo" style="background-color: black; height:12vw;margin-top:3vh">
-							<img src="./media/uwen.png">
+							<img src="./black.jpg">
 						</div>
 						<div class="experienceText">
-							<h3>Website Development | University of Waterloo Energy Network</h3>
+							<h3 onclick="toggleVisibility('uwen2')">Website Development | University of Waterloo Energy Network</h3>
 							<h4>December 2017 - April 2018</h4>
 							<h4>Waterloo, Canada</h4>
-							<ul>
+							<ul id="uwen2" style="display: none;">
 								<li>
 									Contributed to the re-development of the UWEN website as part of a team, analyzed functional and technical requirements, developed code, QA and testing.
 								</li>
@@ -333,13 +458,13 @@
 					</div>
 					<div class="flexDiv ">
 						<div class="experienceLogo">
-							<img src="./main/ArnicaLogo.png" style="margin-top:5vh">
+							<img src="./black.jpg" style="margin-top:5vh">
 						</div>
 						<div class="experienceText">
-							<h3>Web Development | Arnica Software Corporation</h3>
+							<h3 onclick="toggleVisibility('arnica')">Web Development | Arnica Software Corporation</h3>
 							<h4>June - August 2017</h4>
 							<h4>Toronto, Canada</h4>
-							<ul>
+							<ul id="arnica" style="display: none;">
 								<li>
 									Contributed to custom web design and solution implementations, using HTML/CSS
 								</li>
@@ -351,13 +476,13 @@
 					</div>
 					<div class="flexDiv ">
 						<div class="experienceLogo" style="margin-top:2vw">
-							<img src="./media/TEDx.jpg">
+							<img src="./black.jpg">
 						</div>
 						<div class="experienceText">
-							<h3>Conference Head | TEDxBranksomeHall</h3>
+							<h3 onclick="toggleVisibility('ted')">Conference Head | TEDxBranksomeHall</h3>
 							<h4>2017-2018</h4>
 							<h4>Toronto, Canada</h4>
-							<ul>
+							<ul id="ted" style="display: none;">
 								<li>
 									Founder of the TEDxBranksomeHall conference – came up with the idea and concept for the conference, and organised a team of students to plan the event.
 								</li>
@@ -370,13 +495,13 @@
 					</div>
 					<div class="flexDiv ">
 						<div class="experienceLogo" style="margin-top:2vw">
-							<img src="./media/BestBuddies.png">
+							<img src="./black.jpg">
 						</div>
 						<div class="experienceText">
-							<h3>Best Buddies Volunteer | Branksome Hall </h3>
+							<h3 onclick="toggleVisibility('bestbud')">Best Buddies Volunteer | Branksome Hall </h3>
 							<h4>2013-2017</h4>
 							<h4>Toronto, Canada</h4>
-							<ul>
+							<ul id="bestbud" style="display: none;">
 								<li>As a member, I helped to organise and participate in activities with kids and teenagers with mental and developmental disabilities, engaging in activities unique to each buddy to best supplement their personal development.</li>
 								<li>
 									While it was my responsibility to help my buddy, participating in this program further developed my understanding of the multi-faceted makeup of our society, and how a diverse group of people can work together to create a more cohesive social fabric and change the lives of people around us.
@@ -384,7 +509,6 @@
 							</ul>
 						</div>
 					</div>
-
 				</div>
 
 				<!-- <div class="arrow2">
@@ -461,7 +585,7 @@
 							<li>I like reading, especially non-fiction and classical novels.</li>
 							<li>Love movies.</li>
 							<li>I write code. And comments. Technology is my passion.</li>
-							<!-- <li>Food is amazing. I'll never turn down a chance to try something new.</li>  -->
+							<li>BIG foodie. I'll never turn down a chance to try something new.</li> 
 							<li>Can usually be found browsing interesting foods to try out.</li>
 						</ul>
 						
